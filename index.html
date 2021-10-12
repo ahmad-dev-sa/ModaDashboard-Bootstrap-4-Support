@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="ar" dir="rtl" data-theme="light" >
+<html lang="ar"  data-theme="light" >
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>لوحة التحكم</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" >
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
     <!-- CSS3 -->
     <link rel="stylesheet" href="css/custom.css">
     <!-- Material Icons -->
@@ -20,7 +20,7 @@
 <!-------------------------------- sidebar -->
 
 
-         <nav class="sidebar active" id="sidebar">
+         <nav class="sidebar active rtl" id="sidebar">
              <div class="sidebar-header">
               <h3><img src="/img/Moalogopng-50-01.png" alt=""><span>عنوان النظام</span></h3>
              </div>
@@ -56,7 +56,7 @@
 
 
                  <li class="dropdown">
-                    <a href="#" id="CloseAll" data-bs-toggle="collapse" data-bs-target="#pageSubmenu1" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu1">
+                    <a href="#" id="CloseAll" data-toggle="collapse" data-target="#pageSubmenu1" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu1">
                     <i class="material-icons">person</i><span>نظام الموظفين</span>
 
                     <span class="caret"></span>
@@ -70,7 +70,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu2" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu2">
+                    <a href="#" data-toggle="collapse" data-target="#pageSubmenu2" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu2">
                     <i class="material-icons">format_list_bulleted</i><span>إدارة المهام</span></a>
                     <ul class="collapse list-unstyled menu " id="pageSubmenu2">
                         <li><a href="#">الصفحة الرئيسية</a></li>
@@ -79,7 +79,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu3" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu3">
+                    <a href="#" data-toggle="collapse" data-target="#pageSubmenu3" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu3">
                     <i class="material-icons">grid_view</i><span>الترميز والتصنيفات</span></a>
                     
                     <ul class="collapse list-unstyled menu " id="pageSubmenu3">
@@ -95,7 +95,7 @@
                  </li>
 
                 <li class="dropdown">
-                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu4" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu4">
+                    <a href="#" data-toggle="collapse" data-target="#pageSubmenu4" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu4">
                     <i class="material-icons">people</i><span>إدارة المستخدمين</span></a>
                     <ul class="collapse list-unstyled menu " id="pageSubmenu4">
                         <li><a href="#">استعلام المستخدمين</a></li>
@@ -105,7 +105,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu5" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu5">
+                    <a href="#" data-toggle="collapse" data-target="#pageSubmenu5" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu5">
                     <i class="material-icons">admin_panel_settings</i><span>إدارة الصلاحيات</span></a>
                     <ul class="collapse list-unstyled menu " id="pageSubmenu5">
                         <li><a href="#">استعلام الصلاحيات</a></li>
@@ -113,11 +113,6 @@
                     </ul>
                 </li>
 
-
-                
-
-
-                
 
                
 
@@ -132,23 +127,21 @@
          <!-------------------------------- top --- navbar --- design -------------->
 
          <div class="top-navbar">
-             <nav class="navbar navbar-expand-lg">
-                 <button type="button" id="sidebar-collapse" class="d-xl-block d-lg-block d-md-none d-none">
-                     <span class="material-icons">menu</span>
-                     <span class="material-icons d-none">menu_open</span>
-                 </button>
+             <nav class="navbar navbar-expand-lg ">
 
-                 <a class="navbar-brand" href="#" >لوحة التحكم</a>
-                 <button class="d-inline-block d-lg-none ms-auto more-button" type="button" data-toggle="collapse"
-                 data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle">
-                 <span class="material-icons">more_vert</span>
-                 </button>
+                 
 
-                 <div class="collapse navbar-collapse d-xl-block d-lg-block d-sm-none d-md-none d-none" id="navbarcollapse">
+                    <button class="d-inline-block d-lg-none ms-auto more-button " type="button" data-toggle="collapse"
+                    data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle">
+                    <span class="material-icons">more_vert</span>
+                    </button>
+               
+
+                 <div class="collapse navbar-collapse d-xl-block d-lg-block d-sm-none d-md-none d-none " id="navbarcollapse">
                     <ul class="nav navbar ms-auto">
 
                         <li class="nav-item dropdown ">
-                            <a href="#" class="nav-link dropdown-toggle" id="navbarTop03" data-bs-toggle="dropdown" aria-expanded="true">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarTop03" data-toggle="dropdown" aria-expanded="true">
                                 <span class="material-icons">notifications</span>
                                 <span class="notifications">4</span>
                             </a>
@@ -178,7 +171,7 @@
 
                        
                         <li class="nav-item dropdown ">
-                            <a href="#" class="nav-link dropdown-toggle" id="navbarTop02" data-bs-toggle="dropdown" aria-expanded="true">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarTop02" data-toggle="dropdown" aria-expanded="true">
                                 <span class="material-icons">settings</span>
                             </a>
 
@@ -194,7 +187,7 @@
                        
                        
                         <li class="nav-item dropdown ">
-                            <a href="#" class="nav-link dropdown-toggle" id="navbarTop01" data-bs-toggle="dropdown" aria-expanded="true">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarTop01" data-toggle="dropdown" aria-expanded="true">
                                 <span>مرحبا بك : احمد حمدان العنزي</span>
                                 <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="mr-5 rounded-circle"/>
                             </a>
@@ -221,11 +214,19 @@
 
                    </ul>
                  </div>
+                 <a class="navbar-brand " href="#" >لوحة التحكم</a>
+                 <button type="button" id="sidebar-collapse" class="d-xl-block d-lg-block d-md-none d-none">
+                    <span class="material-icons">menu</span>
+                    <span class="material-icons d-none">menu_open</span>
+                </button>
+                 
+
+                 
              </nav>
          </div>
 
 <!-------------------------------- main-content -------------->
-         <div class="main-content">
+         <div class="main-content rtl">
 
             <div class="row">
 
@@ -392,6 +393,7 @@
                                         <th>الاسم الكامل</th>
                                         <th>الرتبة</th>
                                         <th>الوظيفة</th>
+                                        <th>الإجراء</th>
                                     </tr>
                                 </thead>
                                 <tbody class="text-table-body">
@@ -400,36 +402,96 @@
                                         <td>احمد حمدان العنزي</td>
                                         <td>متعاقد</td>
                                         <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">Primary</button>
+                                            <button type="button" class="btn btn-secondary">Secondary</button>
+                                            <button type="button" class="btn btn-success">Success</button>
+                                            <button type="button" class="btn btn-danger">Danger</button>
+                                            <button type="button" class="btn btn-warning">Warning</button>
+                                            <button type="button" class="btn btn-info">Info</button>
+                                            <button type="button" class="btn btn-light">Light</button>
+                                            <button type="button" class="btn btn-dark">Dark</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>احمد حمدان العنزي</td>
                                         <td>متعاقد</td>
                                         <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">Primary</button>
+                                            <button type="button" class="btn btn-secondary">Secondary</button>
+                                            <button type="button" class="btn btn-success">Success</button>
+                                            <button type="button" class="btn btn-danger">Danger</button>
+                                            <button type="button" class="btn btn-warning">Warning</button>
+                                            <button type="button" class="btn btn-info">Info</button>
+                                            <button type="button" class="btn btn-light">Light</button>
+                                            <button type="button" class="btn btn-dark">Dark</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
                                         <td>احمد حمدان العنزي</td>
                                         <td>متعاقد</td>
                                         <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">Primary</button>
+                                            <button type="button" class="btn btn-secondary">Secondary</button>
+                                            <button type="button" class="btn btn-success">Success</button>
+                                            <button type="button" class="btn btn-danger">Danger</button>
+                                            <button type="button" class="btn btn-warning">Warning</button>
+                                            <button type="button" class="btn btn-info">Info</button>
+                                            <button type="button" class="btn btn-light">Light</button>
+                                            <button type="button" class="btn btn-dark">Dark</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
                                         <td>احمد حمدان العنزي</td>
                                         <td>متعاقد</td>
                                         <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">Primary</button>
+                                            <button type="button" class="btn btn-secondary">Secondary</button>
+                                            <button type="button" class="btn btn-success">Success</button>
+                                            <button type="button" class="btn btn-danger">Danger</button>
+                                            <button type="button" class="btn btn-warning">Warning</button>
+                                            <button type="button" class="btn btn-info">Info</button>
+                                            <button type="button" class="btn btn-light">Light</button>
+                                            <button type="button" class="btn btn-dark">Dark</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
                                         <td>احمد حمدان العنزي</td>
                                         <td>متعاقد</td>
                                         <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">Primary</button>
+                                            <button type="button" class="btn btn-secondary">Secondary</button>
+                                            <button type="button" class="btn btn-success">Success</button>
+                                            <button type="button" class="btn btn-danger">Danger</button>
+                                            <button type="button" class="btn btn-warning">Warning</button>
+                                            <button type="button" class="btn btn-info">Info</button>
+                                            <button type="button" class="btn btn-light">Light</button>
+                                            <button type="button" class="btn btn-dark">Dark</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>6</td>
                                         <td>احمد حمدان العنزي</td>
                                         <td>متعاقد</td>
                                         <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">Primary</button>
+                                            <button type="button" class="btn btn-secondary">Secondary</button>
+                                            <button type="button" class="btn btn-success">Success</button>
+                                            <button type="button" class="btn btn-danger">Danger</button>
+                                            <button type="button" class="btn btn-warning">Warning</button>
+                                            <button type="button" class="btn btn-info">Info</button>
+                                            <button type="button" class="btn btn-light">Light</button>
+                                            <button type="button" class="btn btn-dark">Dark</button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -542,13 +604,12 @@
     </div>
     
 
-    <script src="js/jquery-3.5.1.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
 
 
-    <script src="js/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+    <script src="js/Chart.min.js"></script>
     <script src="js/dashboard.js"></script>
     <script src="js/main.js"></script>
 </body>

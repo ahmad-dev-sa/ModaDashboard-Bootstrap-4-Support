@@ -77,7 +77,19 @@ html {
 
   --color-text-copyright: #344f4d !important;
 
-  --color-text-btn-normal:#344f4d;
+  --color-text-btn-normal: #344f4d;
+
+  /* Colors  */
+
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+
+  /* End Colors  */
 }
 
 html[data-theme="dark"] {
@@ -139,7 +151,19 @@ html[data-theme="dark"] {
 
   --color-text-copyright: #344f4d !important;
 
-  --color-text-btn-normal:#ffffff !important;
+  --color-text-btn-normal: #ffffff !important;
+
+  /* Colors  */
+
+  --secondary: #54585c;
+  --success: #08681e;
+  --info: #056675;
+  --warning: #bb8e06;
+  --danger: #770d18;
+  --light: #d6d6d6a8;
+  --dark: #2a3036;
+
+  /* End Colors  */
 }
 
 h1,
@@ -193,6 +217,13 @@ a:focus {
   transition: all 0.3s;
 }
 
+.rtl {
+  direction: rtl !important;
+}
+.ltr {
+  direction: ltr !important;
+}
+
 /*============================================================================
    Primary Button Style
 ==============================================================================*/
@@ -214,6 +245,47 @@ a:focus {
 .btn-primary:hover {
   color: #fff !important;
   background-color: #385a58 !important;
+  border: 0;
+}
+
+.btn-secondary {
+  color: #ffffff !important;
+  background-color: var(--secondary) !important;
+  border: 0;
+}
+.btn-success {
+  color: #ffffff !important;
+  background-color: var(--success) !important;
+  border: 0;
+}
+
+.btn-danger {
+  color: #ffffff !important;
+  background-color: var(--danger) !important;
+  border: 0;
+}
+
+.btn-warning {
+  color: #ffffff !important;
+  background-color: var(--warning) !important;
+  border: 0;
+}
+
+.btn-info {
+  color: #ffffff !important;
+  background-color: var(--info) !important;
+  border: 0;
+}
+
+.btn-light {
+  color: var(--dark) !important;
+  background-color: var(--light) !important;
+  border: 0;
+}
+
+.btn-dark {
+  color: #ffffff !important;
+  background-color: var(--dark) !important;
   border: 0;
 }
 
@@ -375,6 +447,7 @@ html.transition *:after {
   text-transform: uppercase;
   transition: all 0.5s ease;
   font-weight: 600;
+  text-align: right;
 }
 
 .sidebar-header h3 img {
@@ -424,8 +497,8 @@ html.transition *:after {
   font-weight: 400;
   display: block;
   color: #ffffff;
+  text-align: right !important;
 }
-
 
 #sidebar ul li span {
   text-transform: capitalize;
@@ -439,7 +512,7 @@ html.transition *:after {
   margin-right: 10px;
 }
 
-.dropdown .list-unstyled li a{
+.dropdown .list-unstyled li a {
   padding-right: 66px !important;
 }
 /*============================================================================
@@ -594,13 +667,12 @@ html.transition *:after {
    main-content navbar-design End
 ==============================================================================*/
 
-
 /*============================================================================
    Dropup Button Top in Chart Cart Start
 ==============================================================================*/
 /* Dropup Button */
 .dropbtn {
-  background-color:#344f4d;
+  background-color: #344f4d;
   color: white;
   padding: 5px 16px;
   font-size: 16px;
@@ -610,7 +682,7 @@ html.transition *:after {
 /* The container <div> - needed to position the dropup content */
 .dropup {
   position: relative;
-  display:inline-block;
+  display: inline-block;
 }
 
 /* Dropup content (Hidden by Default) */
@@ -619,10 +691,10 @@ html.transition *:after {
   position: absolute;
   background-color: var(--bg-color-sidebar-menu) !important ;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   left: 10px;
-  top:40px;
+  top: 40px;
   color: var(--color-text-btn-normal);
 }
 
@@ -637,8 +709,7 @@ html.transition *:after {
 
 /* Change color of dropup links on hover */
 .dropup-content a:hover {
-  background-color:var(--bg-topbar-actve);
-  
+  background-color: var(--bg-topbar-actve);
 }
 
 /* Show the dropup menu on hover */
@@ -648,7 +719,7 @@ html.transition *:after {
 
 /* Change the background color of the dropup button when the dropup content is shown */
 .dropup:hover .dropbtn {
-  background-color:#1f3331 !important;
+  background-color: #1f3331 !important;
 }
 /*============================================================================
    Dropup Button Top in Chart Cart End
@@ -696,8 +767,6 @@ html.transition *:after {
 .card .card-header span {
   font-size: 100px;
   line-height: 0px;
-  
-  
 }
 
 .icon.icon-status {
@@ -839,7 +908,7 @@ html.transition *:after {
   color: #333;
 }
 
-.bg-card{
+.bg-card {
   background-color: var(--bg-top-navbar) !important;
   padding: 0px !important;
 }
@@ -997,9 +1066,7 @@ footer .copyright {
     background-color: var(--bg-dropdown-menu);
     animation: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
-  
 
-  
   .menu {
     padding: 5px 0px !important;
     background-color: rgba(31, 51, 49);
