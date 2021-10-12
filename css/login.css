@@ -1,0 +1,164 @@
+/* open-sans-regular - latin - modern browsers  */
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("css/fonts/Changa-VariableFont_wght.ttf") format("ttf"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-box-align: center;
+  align-items: center;
+  background: #344f4d !important;
+  background: -webkit-linear-gradient(to right, #344f4d, #333333);
+  background: linear-gradient(to right, #344f4d, #333333);
+  display: -webkit-box;
+  display: flex;
+  font-family: "Changa", sans-serif;
+  height: 100vh;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+/*============================================================================
+  Login style
+==============================================================================*/
+.title-login {
+  color: #344f4d !important;
+  font-weight: bold;
+  text-align: center;
+}
+.logo-login {
+  text-align: center;
+}
+.logo-login img {
+  width: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: #344f4d !important;
+}
+.login-page {
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+.form-right i {
+  font-size: 100px;
+}
+.bg-right {
+  background-color: #344f4d !important;
+}
+.btn-Moda {
+  color: #fff !important;
+  background-color: #344f4d !important;
+}
+.imge-right {
+  margin-bottom: 0;
+}
+form .input-group .input-group-text {
+  color: #344f4d !important;
+}
+form label {
+  color: #344f4d !important;
+}
+
+form a {
+  color: #344f4d !important;
+}
+form a:hover {
+  color: #436865 !important;
+}
+form a:focus {
+  color: #344f4d !important;
+}
+form a:visited {
+  color: #344f4d !important;
+}
+form .form-check input {
+  background-color: #344f4d !important;
+  border: #344f4d solid 1px;
+}
+
+form #username,
+#Inputpassword {
+  border: #eee solid 1px !important;
+  padding: 10px;
+}
+
+form #username:focus,
+#Inputpassword:focus {
+  border: #344f4d solid 2px !important;
+}
+
+.Copyright {
+  text-align: center !important;
+}
+.Copyright p {
+  color: #344f4d !important;
+  font-weight: bold !important;
+  font-size: 12px;
+}
+.img-right {
+  padding-top: 313px;
+}
+
+.bg-login-image {
+  background: url(/img/bg_login.jpg);
+  background-position-x: 0;
+  background-position-y: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*============================================================================
+   Material-icons font-style
+==============================================================================*/
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(/fonts/MaterialIcons-Regular.woff2) format("woff2"),
+    url(/fonts/MaterialIcons-Regular.woff) format("woff"),
+    url(/fonts/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+/*============================================================================
+   Material-icons font-style End
+==============================================================================*/
