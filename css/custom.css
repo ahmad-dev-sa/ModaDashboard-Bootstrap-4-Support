@@ -589,6 +589,11 @@ html.transition *:after {
   color: var(--color-text-sidebar);
   background-color: rgba(255, 251, 251, 0.2);
 }
+#sidebar ul li.active2 > a {
+  color: var(--color-text-sidebar);
+  background-color: var(--bg-sidebar-actve);
+  cursor: default !important;
+}
 
 /*============================================================================
    dropdown-toggle
@@ -767,7 +772,9 @@ html.transition *:after {
   background-color: var(--bg-topbar-actve);
   border-radius: 0px;
 }
-
+.dropdown-item {
+  text-align: left !important ;
+}
 .dropdown-item a {
   color: var(--color-text-dropdown-menu) !important;
 }

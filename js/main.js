@@ -4,6 +4,12 @@ $(document).ready(function(){
         $(this).attr("disabled", "disabled");
     });
 
+
+    $(".active2, .dashboard").click(function() {
+        $(this).attr("disabled", "disabled");
+    });
+
+
     //This for Button collapse sidebar
     $("#sidebar-collapse").on('click', function(){
         $('#sidebar').toggleClass('active');
