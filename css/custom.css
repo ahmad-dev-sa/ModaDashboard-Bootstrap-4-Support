@@ -80,14 +80,24 @@ html {
   --color-text-btn-normal: #344f4d;
 
   /* Colors  */
-
+  --primary: #344f4d !important;
+  --primary2: #1f3331 !important;
   --secondary: #6c757d;
+  --secondary2: #54585c;
   --success: #28a745;
+  --success2: #08681e;
   --info: #17a2b8;
+  --info2: #056675;
   --warning: #ffc107;
+  --warning2: #bb8e06;
   --danger: #dc3545;
+  --danger2: #770d18;
   --light: #f8f9fa;
+  --light2: #d6d6d6a8;
   --dark: #343a40;
+  --dark2: #2a3036;
+
+  --color-text-btn: #ffffff;
 
   /* End Colors  */
 }
@@ -155,13 +165,24 @@ html[data-theme="dark"] {
 
   /* Colors  */
 
+  --primary: #1f3331 !important;
+  --primary2: #344f4d !important;
+  --secondary2: #6c757d;
   --secondary: #54585c;
+  --success2: #28a745;
   --success: #08681e;
+  --info2: #17a2b8;
   --info: #056675;
+  --warning2: #ffc107;
   --warning: #bb8e06;
+  --danger2: #dc3545;
   --danger: #770d18;
+  --light2: #f8f9fa;
   --light: #d6d6d6a8;
+  --dark2: #343a40;
   --dark: #2a3036;
+
+  --color-text-btn: #eeeeee;
 
   /* End Colors  */
 }
@@ -225,55 +246,148 @@ a:focus {
 }
 
 /*============================================================================
-   Primary Button Style
+   All Button Style
 ==============================================================================*/
 
+/* Outline Button start  */
+
 .btn-outline-primary {
-  color: #344f4d !important;
-  border-color: #344f4d !important;
+  color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
 }
 .btn-outline-primary:hover {
-  color: #fff !important;
-  background-color: #344f4d !important;
+  color: var(--color-text-btn) !important;
+  background-color: var(--primary2) !important;
 }
 
+.btn-outline-secondary {
+  color: var(--secondary) !important;
+  border: 1px solid var(--secondary) !important;
+}
+.btn-outline-secondary:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--secondary2) !important;
+}
+
+.btn-outline-success {
+  color: var(--success) !important;
+  border: 1px solid var(--success) !important;
+}
+.btn-outline-success:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--success2) !important;
+}
+
+.btn-outline-danger {
+  color: var(--danger) !important;
+  border: 1px solid var(--danger) !important;
+}
+.btn-outline-danger:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--danger2) !important;
+}
+
+.btn-outline-warning {
+  color: var(--warning) !important;
+  border: 1px solid var(--warning) !important;
+}
+.btn-outline-warning:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--warning2) !important;
+}
+
+.btn-outline-info {
+  color: var(--info) !important;
+  border: 1px solid var(--info) !important;
+}
+.btn-outline-info:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--info2) !important;
+}
+
+.btn-outline-light {
+  color: var(--dark) !important;
+  border: 1px solid var(--light) !important;
+}
+.btn-outline-light:hover {
+  color: var(--dark) !important;
+  background-color: var(--light2) !important;
+}
+
+.btn-outline-dark {
+  color: var(--dark) !important;
+  border: 1px solid var(--dark) !important;
+}
+.btn-outline-dark:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--dark2) !important;
+}
+/* Outline Button End 
+============================================================================
+ Outline Button start  */
 .btn-primary {
   color: #fff !important;
-  background-color: #344f4d !important;
+  background-color: var(--primary) !important;
   border: 0;
 }
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #385a58 !important;
+  background-color: var(--primary2) !important;
   border: 0;
 }
 
 .btn-secondary {
-  color: #ffffff !important;
+  color: var(--color-text-btn) !important;
   background-color: var(--secondary) !important;
   border: 0;
 }
+.btn-secondary:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--secondary2) !important;
+  border: 0;
+}
+
 .btn-success {
-  color: #ffffff !important;
+  color: var(--color-text-btn) !important;
   background-color: var(--success) !important;
+  border: 0;
+}
+.btn-success:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--success2) !important;
   border: 0;
 }
 
 .btn-danger {
-  color: #ffffff !important;
+  color: var(--color-text-btn) !important;
   background-color: var(--danger) !important;
+  border: 0;
+}
+.btn-danger:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--danger2) !important;
   border: 0;
 }
 
 .btn-warning {
-  color: #ffffff !important;
+  color: var(--color-text-btn) !important;
   background-color: var(--warning) !important;
+  border: 0;
+}
+.btn-warning:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--warning2) !important;
   border: 0;
 }
 
 .btn-info {
-  color: #ffffff !important;
+  color: var(--color-text-btn) !important;
   background-color: var(--info) !important;
+  border: 0;
+}
+.btn-info:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--info2) !important;
   border: 0;
 }
 
@@ -282,13 +396,22 @@ a:focus {
   background-color: var(--light) !important;
   border: 0;
 }
-
-.btn-dark {
-  color: #ffffff !important;
-  background-color: var(--dark) !important;
+.btn-light:hover {
+  color: var(--dark) !important;
+  background-color: var(--light2) !important;
   border: 0;
 }
 
+.btn-dark {
+  color: var(--color-text-btn) !important;
+  background-color: var(--dark) !important;
+  border: 0;
+}
+.btn-dark:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--dark2) !important;
+  border: 0;
+}
 /*============================================================================
    Light / Dark Mode switch style
 ==============================================================================*/
@@ -799,10 +922,11 @@ html.transition *:after {
 }
 
 .card .category:not([class="text-"]) {
-  color: #555555;
-  font-size: 30px;
+  color: #344f4d;
+  font-size: 15px;
   font-weight: 400;
   padding-bottom: 14px;
+  text-align: right !important;
 }
 
 .card .card-title:not(.card-calender .card-title) {
@@ -816,7 +940,7 @@ html.transition *:after {
 
 .card .card-footer .stats {
   line-height: 22px;
-  color: #555555;
+  color: #344f4d;
   font-size: 15px;
 }
 
@@ -865,34 +989,34 @@ html.transition *:after {
 
 .steamline .sl-primary:before,
 .steamline .sl-primary:last-child:after {
-  background-color: #188ae2;
+  background-color: var(--info);
 }
 
 .steamline .sl-danger:before,
 .steamline .sl-danger:last-child:after {
-  background-color: #ff5b5b;
+  background-color: var(--danger);
 }
 
 .steamline .sl-success {
-  border-right-color: #10c469;
+  border-right-color: var(--success);
 }
 
 .steamline .sl-success:before,
 .steamline .sl-success:last-child:after {
-  background-color: #10c469;
+  background-color: var(--success);
 }
 
 .steamline .sl-warning {
-  border-right-color: #f9cb51;
+  border-right-color: var(--warning);
 }
 
 .steamline .sl-warning:before,
 .steamline .sl-warning:last-child:after {
-  background-color: #f9cb51;
+  background-color: var(--warning);
 }
 
 .steamline .sl-danger {
-  border-right-color: #ff5b5b;
+  border-right-color: var(--danger);
 }
 
 .steamline .sl-item .sl-content {
@@ -905,7 +1029,8 @@ html.transition *:after {
 }
 .steamline .sl-item p {
   font-size: 14px;
-  color: #333;
+  color: #344f4d;
+  text-align: right;
 }
 
 .bg-card {
@@ -913,6 +1038,84 @@ html.transition *:after {
   padding: 0px !important;
 }
 
+/*============================================================================
+   Card dashbord Stutes
+==============================================================================*/
+
+.card-box {
+  position: relative;
+  color: #fff;
+  padding: 20px 10px 40px;
+  margin: 20px 0px;
+}
+.card-box:hover {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.card-box .icon i {
+  font-size: 88px;
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+.card-box:hover .icon i {
+  font-size: 90px;
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+.card-box .inner {
+  padding: 5px 10px 0 10px;
+}
+.card-box h3 {
+  font-size: 27px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  white-space: nowrap;
+  padding: 0;
+  text-align: left;
+  color: var(--light) !important;
+}
+.card-box p {
+  font-size: 15px;
+  color: var(--light) !important;
+}
+.card-box .icon {
+  position: absolute;
+  top: auto;
+  bottom: 5px;
+  right: 5px;
+  z-index: 0;
+  font-size: 72px;
+  color: rgba(0, 0, 0, 0.15);
+}
+.card-box .card-box-footer {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  text-align: center;
+  padding: 3px 0;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-decoration: none;
+}
+.card-box .card-box-footer i {
+  padding-top: 5px;
+}
+.card-box:hover .card-box-footer {
+  background: rgba(0, 0, 0, 0.3);
+}
+.bg-blue {
+  background-color: var(--info) !important;
+}
+.bg-green {
+  background-color: var(--success) !important;
+}
+.bg-orange {
+  background-color: var(--warning) !important;
+}
+.bg-red {
+  background-color: var(--danger) !important;
+}
 /*============================================================================
    Table Header and Body
 ==============================================================================*/

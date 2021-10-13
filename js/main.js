@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
-    
+    $("#dropbtn").click(function() {
+        $(this).attr("disabled", "disabled");
+    });
 
     //This for Button collapse sidebar
     $("#sidebar-collapse").on('click', function(){
