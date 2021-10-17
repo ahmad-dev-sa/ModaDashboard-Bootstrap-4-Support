@@ -16,7 +16,7 @@ body {
 html {
   margin: 0;
   padding: 0;
-
+  background-color: var(--bg) !important;
   --link-hover-focus: #344f4d;
   --bg: #eeeeee;
   --bg-top-navbar: #b3bbbe;
@@ -96,13 +96,14 @@ html {
   --light2: #d6d6d6a8;
   --dark: #343a40;
   --dark2: #2a3036;
-
   --color-text-btn: #ffffff;
-
   /* End Colors  */
 }
 
 html[data-theme="dark"] {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg) !important;
   --link-hover-focus: #1f3331;
   --bg: #1f3331;
   --bg-top-navbar: #344f4d;
@@ -243,6 +244,23 @@ a:focus {
 }
 .ltr {
   direction: ltr !important;
+}
+.warning-alert {
+  color: var(--warning) !important;
+}
+.danger-alert {
+  color: var(--danger) !important;
+}
+.primary-alert {
+  color: var(--primary) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.border-primary {
+  border: 1px solid var(--primary) !important;
 }
 
 /*============================================================================
@@ -939,6 +957,7 @@ html.transition *:after {
 .card .card-title:not(.card-calender .card-title) {
   margin-top: 0;
   margin-bottom: 5px;
+  text-align: right !important;
 }
 
 .card-stats .card-title {
@@ -1033,6 +1052,7 @@ html.transition *:after {
   color: inherit;
   opacity: 0.6;
   font-size: 12px;
+  text-align: right !important;
 }
 .steamline .sl-item p {
   font-size: 14px;
